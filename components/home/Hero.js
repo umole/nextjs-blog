@@ -6,7 +6,7 @@ function Hero() {
             <Image className='object-cover object-top w-full h-full' src='/images/site/photo.jpg' alt='Image showing andy' height={300} width={300}/>
         </div>
         <h1 className='text-2xl my-4 text-gray-300'>Hi, I'm Andy</h1>
-        <p className='text-lg text-gray-200 w-90 max-w-2xl mx-auto'>I blog about web development especially full stack development using nextjs, tailwindcss, typescript </p>
+        <p className='text-lg text-gray-200 w-90 max-w-2xl mx-auto'>I blog about web development especially full stack development using nextjs, tailwindcss and typescript </p>
     </section>
 }
 
