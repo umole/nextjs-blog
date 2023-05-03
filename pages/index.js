@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Hero from '../components/home/Hero';
 
 const HomePage = () => {
   return (
@@ -6,7 +7,6 @@ const HomePage = () => {
     // 2) Featured AllPostspage
     <Fragment>
         <Hero />
-        <FeaturedPosts />
     </Fragment>
 
   );
