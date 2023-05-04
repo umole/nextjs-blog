@@ -1,9 +1,8 @@
-import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-const PostItem = (prop) => {
-    const { title, image, excerpt, date, slug } = prop.post;
+const PostItem = (props) => {
+    const { title, image, excerpt, date, slug } = props.post;
 
     const formattedDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
@@ -11,12 +10,14 @@ const PostItem = (prop) => {
         year: 'numeric'
     });
 
-    const imagePath = `/images/posts${image}`
+    const imagePath = `/images/posts/${image}`
+    const linkPath = `/posts/${slug}`;
+    console.log(imagePath, linkPath, title, date);
 
   return <li className='shadow-md bg-gray-800 text-center' >
-    <Link className='text-gray-100'>
+    <Link className='text-gray-100' href={linkPath}>
         <div className='w-full max-h-20rem overflow-hidden' >
-            <Image src={imagePath} alt={title} width={300} height={200} className='object-cover' />
+            <Image src={imagePath} alt={title} width={300} height={200} layout='responsive' className='object-cover' />
         </div>
         <div className='p-4'>
             <h3 className='m-2 text-6xl'>{title}</h3>

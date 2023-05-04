@@ -46,7 +46,7 @@ const HomePage = () => {
     // 2) Featured AllPostspage
     <Fragment>
         <Hero />
-        <FeaturedPosts posts={} />
+        <FeaturedPosts posts={DUMMY_POSTS} />
     </Fragment>
 
   );
