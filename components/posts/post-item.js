@@ -12,8 +12,7 @@ const PostItem = (props) => {
 
     const imagePath = `/images/posts/${image}`
     const linkPath = `/posts/${slug}`;
-    console.log(imagePath, linkPath, title, date);
-
+    
   return <li className='shadow-md bg-gray-800 text-center' >
     <Link className='text-gray-100' href={linkPath}>
         <div className='w-full max-h-20rem overflow-hidden' >
